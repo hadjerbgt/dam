@@ -77,12 +77,7 @@ class _DashBoardState extends State<DashBoard> {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromARGB(255, 89, 148, 99), foregroundColor: Colors.white),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const Calculate(),
-                      ),
-                    );
+                   //hadi nrigloha mbaad
                   },
                   child: Text(' check your filled viva')),
 
