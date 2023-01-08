@@ -19,25 +19,27 @@ class result extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    int result = int.parse(val1) +
-        int.parse(val2) +
-        int.parse(val3) +
-        int.parse(val4) +
-        int.parse(val5) +
-        int.parse(val6) +
-        int.parse(val7) +
-        int.parse(val8) +
-        int.parse(val9) +
-        int.parse(val10);
+    double result = double.parse(val1) +
+        double.parse(val2) +
+        double.parse(val3) +
+        double.parse(val4) +
+        double.parse(val5) +
+        double.parse(val6) +
+        double.parse(val7) +
+        double.parse(val8) +
+        double.parse(val9) +
+        double.parse(val10);
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 118, 129, 125),
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 89, 148, 99),
         title: Text('final teacher’s mark'),
       ),
       body: Container(
         child: Center(
             child: Center(
                 child:
-                    Text("YOUR FINAL MARK IS :\n                    $result"))),
+                    Text("YOUR FINAL MARK IS :\n                 $result"))),
       ),
     );
     ;
