@@ -25,13 +25,20 @@ class _CalculateState extends State<Calculate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 182, 212, 232),
+
+      backgroundColor: Color.fromARGB(255, 118, 129, 125),
       appBar: AppBar(
         title: Text('calculate'),
+        backgroundColor: Color.fromARGB(255, 89, 148, 99),
+        centerTitle: true,
       ),
+
       body: SingleChildScrollView(
         child: Column(
           children: [
+            const SizedBox(
+              height: 20,
+            ),
             Table(
                 border: TableBorder.all(width: 1, color: Colors.black),
                 defaultVerticalAlignment: TableCellVerticalAlignment.middle,
@@ -134,6 +141,8 @@ class _CalculateState extends State<Calculate> {
                   ]),
                 ]),
             ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 89, 148, 99), foregroundColor: Colors.white),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -153,7 +162,7 @@ class _CalculateState extends State<Calculate> {
                 },
                 child: const Text(
                   "calculate",
-                  style: TextStyle(color: Colors.black),
+
                 ))
           ],
         ),
